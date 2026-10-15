@@ -27,7 +27,7 @@ export function SiteHeader() {
         </button>
         <nav id="primary-navigation" aria-label="Main navigation" className={`site-nav${open ? ' site-nav--open' : ''}`}>
           {links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}
-          <a className="button button--orange site-nav__action" href="#take-action" onClick={() => setOpen(false)}>Take action <ArrowUpRight size={15} aria-hidden="true" /></a>
+          <a className="button button--orange site-nav__action" href="#sign-petition" onClick={() => setOpen(false)}>Sign the petition <ArrowUpRight size={15} aria-hidden="true" /></a>
         </nav>
       </div>
     </header>

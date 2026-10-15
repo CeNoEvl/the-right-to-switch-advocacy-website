@@ -9,6 +9,7 @@ import { PublicRecordSection } from '@/components/public-record-section'
 import { SiteHeader } from '@/components/site-header'
 import { ShareBrief } from '@/components/share-brief'
 import { NewsletterForm } from '@/components/newsletter-form'
+import { contactEmail, contactHref } from '@/lib/contact'
 
 export function CampaignPage() {
   return (
@@ -32,6 +33,7 @@ export function CampaignPage() {
             <div className="hero__actions">
               <a className="button button--orange" href="#evidence">Explore the evidence <ArrowDown size={16} aria-hidden="true" /></a>
               <a className="button button--outline-light" href="#tell-your-story">Tell your story <ArrowUpRight size={16} aria-hidden="true" /></a>
+              <a className="button button--outline-light" href="#sign-petition">Sign the petition <ArrowUpRight size={16} aria-hidden="true" /></a>
             </div>
             <p className="hero__note">Adult choice. Public evidence. Real accountability.</p>
           </div>
@@ -72,6 +74,7 @@ export function CampaignPage() {
           <p>Adult choice.<br />Public evidence.<br />Real accountability.</p>
           <nav aria-label="Footer navigation" className="site-footer__links">
             <a href="#evidence">Evidence</a><a href="#state-policy">Pennsylvania</a><a href="#public-record">Public record</a><a href="#standards">About this project</a>
+            <a className="contact-email" href={contactHref}>Email: {contactEmail}</a>
           </nav>
           <div className="site-footer__share"><ShareBrief /><span>Share a sourced finding</span></div>
         </div>
