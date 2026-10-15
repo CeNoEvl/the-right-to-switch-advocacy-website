@@ -10,6 +10,7 @@ import { SiteHeader } from '@/components/site-header'
 import { ShareBrief } from '@/components/share-brief'
 import { NewsletterForm } from '@/components/newsletter-form'
 import { contactEmail, contactHref } from '@/lib/contact'
+import { PageViewCounter } from '@/components/page-view-counter'
 
 export function CampaignPage() {
   return (
@@ -78,6 +79,7 @@ export function CampaignPage() {
           </nav>
           <div className="site-footer__share"><ShareBrief /><span>Share a sourced finding</span></div>
         </div>
+        <div className="page-wrap"><PageViewCounter /></div>
         <div className="page-wrap site-footer__bottom"><span>© 2026 The Right to Switch</span><span>Independent civic information. Not medical or legal advice.</span><a href="#standards">Editorial standards</a></div>
       </footer>
     </>

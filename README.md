@@ -70,3 +70,31 @@ Stories still require separate publication permission.
 The site does not claim a formal FDA petition has been filed or a docket
 comment submitted. Follow FDA's instructions to prepare any formal request,
 use the relevant official filing route, and retain its tracking confirmation.
+
+
+## Public footer page-view counter
+
+The footer displays a cumulative **page-view estimate**, starting October 15,
+2026, using VisitorBadge.io's shared counter. The total is stored by that
+service, not in browser storage or a serverless function's memory.
+No Vercel dashboard authorization or additional environment variables are needed.
+
+On page mount, the client posts once to `/api/page-views`. The server makes
+one uncached request to the fixed VisitorBadge endpoint and returns only
+the validated numeric total. It does not forward visitor cookies, client
+IP headers, form entries, or email addresses. The upstream SVG is never
+inserted into the page or served as executable content.
+
+Repeat page loads, bot requests, and setup/verification requests may increase
+this public count. Script blockers and network errors may omit views. It is
+not a count of unique people and cannot recover historical or daily Vercel
+Analytics totals. Keep the upstream `path` identifier stable to retain the
+same counter.
+
+The footer displays an unavailable message if the service fails, rather than
+a fabricated number. The internal POST rejects an explicitly different
+Origin, but this is a public counter and must not be used as fraud-resistant
+or independently verified analytics.
+
+Counter service: https://www.visitorbadge.io/
+Provider reference: https://github.com/estruyf/github-visitors-badge
