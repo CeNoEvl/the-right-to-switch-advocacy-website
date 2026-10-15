@@ -44,3 +44,29 @@ No mailing-list enrollment or automated reply is configured.
 
 Provider documentation: https://formsubmit.co/documentation
 Activation help: https://formsubmit.co/help
+
+## Reaching FDA and elected officials
+
+The action section offers separate editable drafts for FDA's Center for Tobacco
+Products and Pennsylvania lawmakers. Switching recipients preserves each draft.
+The FDA button opens the visitor's email app addressed to **AskCTP@fda.hhs.gov**;
+the visitor reviews and sends it. A copy button supports webmail and official
+contact forms. No email to government is sent by the website automatically.
+
+Official recipient sources, checked October 15, 2026:
+- FDA contact: https://www.fda.gov/tobacco-products/about-center-tobacco-products-ctp/contact-ctp
+- Pennsylvania lawmakers: https://www.palegis.us/find-my-legislator
+- Citizen petition filing: https://www.fda.gov/regulatory-information/dockets-management/instructions-submitting-citizen-petitions-cps-electronically
+- Docket comments: https://www.fda.gov/regulatory-information/federal-register-fr-notices/how-use-regulationsgov
+
+The support form emails the organizer separately. An optional, unchecked
+`government_sharing_permission` checkbox allows the organizer to include that
+signer's name, city/state, support, and optional message in a government submission,
+which could be public. Do not include their email address. If that field is
+absent, including for all signatures submitted before this option was added,
+do not share their identifiable support without obtaining separate permission.
+Stories still require separate publication permission.
+
+The site does not claim a formal FDA petition has been filed or a docket
+comment submitted. Follow FDA's instructions to prepare any formal request,
+use the relevant official filing route, and retain its tracking confirmation.

@@ -329,3 +329,11 @@ p + p { margin-top: 16px; }
   .contact-email { font-size: 11px; gap: 6px; }
 }
 @media print { .petition-panel { display: none; } }
+
+/* Official contact paths */
+.official-links { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; margin-top: 24px; }
+.government-message-label { margin-top: 18px; }
+.message-panel .form-actions { margin-top: 15px; }
+.government-filing { margin-top: 40px; padding: 28px; border: 1px solid #a85b3e; background: #f9e5d8; }
+.government-filing > p { font-size: 13px; margin-top: 15px; max-width: 800px; }
+.government-filing .official-links { margin-top: 18px; }
