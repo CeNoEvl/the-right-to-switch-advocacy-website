@@ -1,11 +1,16 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
+import './campaign.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'The Right to Switch | Adult choice. Public evidence.',
+  description: 'Research, public records, and adult voices on vaping policy, corporate influence, and independent businesses.',
+  openGraph: {
+    title: 'The Right to Switch',
+    description: 'Adult choice. Public evidence. Real accountability.',
+    type: 'website',
+  },
   icons: {
     icon: [
       {
@@ -26,11 +31,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light dark',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
+  colorScheme: 'light',
+  themeColor: '#f5f1e9',
 }
 
 export default function RootLayout({
@@ -39,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="light">
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
