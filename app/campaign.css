@@ -346,3 +346,16 @@ p + p { margin-top: 16px; }
 .page-view-counter__note { font-size: 10px; line-height: 1.6; color: #d2d8cd; }
 @media (max-width: 640px) { .page-view-counter { align-items: flex-start; flex-direction: column; padding: 16px 18px; } }
 @media print { .page-view-counter { display: none; } }
+
+/* Founder’s personal statement */
+.founder-statement { padding-block: 28px; background: #000; color: #f5f1e9; border-bottom: 1px solid #3b3b3b; }
+.founder-statement .eyebrow { color: #f28c66; margin-bottom: 14px; }
+.founder-statement blockquote { margin: 0; padding-left: 20px; border-left: 3px solid var(--orange); }
+.founder-statement blockquote p { max-width: 1120px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(18px, 1.9vw, 25px); line-height: 1.55; }
+.founder-statement__credit { margin-top: 14px; padding-left: 23px; color: #c6c6c6; font-size: 11px; line-height: 1.6; }
+@media (max-width: 640px) {
+  .founder-statement { padding-block: 23px; }
+  .founder-statement blockquote { padding-left: 15px; }
+  .founder-statement__credit { padding-left: 18px; }
+}
+@media print { .founder-statement { background: #fff; color: #111; } .founder-statement__credit { color: #444; } }

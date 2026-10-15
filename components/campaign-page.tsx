@@ -17,6 +17,15 @@ export function CampaignPage() {
     <>
       <SiteHeader />
       <main id="main-content" tabIndex={-1}>
+        <section className="founder-statement" aria-label="A personal message from Chris">
+          <div className="page-wrap">
+            <p className="eyebrow">Why this matters to me</p>
+            <blockquote>
+              <p>“I vape and it stopped me from smoking cigarettes. Now they are going to clear the shelves of vape juices. Is this about tax money—and getting Marlboro’s precious cigarette sales to go up again?”</p>
+            </blockquote>
+            <p className="founder-statement__credit">Chris, founder · Personal experience and opinion</p>
+          </div>
+        </section>
         <section className="hero" aria-labelledby="hero-title">
           <Image
             className="hero__image"
